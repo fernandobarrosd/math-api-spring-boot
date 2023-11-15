@@ -7,12 +7,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.fernando.mathapi.controllers.documentation.SubtractControllerDocumentation;
 import com.fernando.mathapi.dtos.ResultDTO;
 import com.fernando.mathapi.services.interfaces.SubtractService;
 
 @RestController
 @RequestMapping("/subtract")
-public class SubtractController {
+public class SubtractController implements SubtractControllerDocumentation {
     @Autowired
     private SubtractService subtractService;
 
