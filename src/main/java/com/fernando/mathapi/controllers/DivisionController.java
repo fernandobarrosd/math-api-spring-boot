@@ -4,11 +4,12 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.fernando.mathapi.controllers.documentation.DivisionControllerDocumentation;
 import com.fernando.mathapi.services.interfaces.DivisionService;
 
 @RestController
 @RequestMapping("/division")
-public class DivisionController {
+public class DivisionController implements DivisionControllerDocumentation {
     @Autowired
     private DivisionService divisionService;
 

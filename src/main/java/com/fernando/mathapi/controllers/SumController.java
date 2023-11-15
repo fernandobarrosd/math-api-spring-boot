@@ -7,12 +7,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import com.fernando.mathapi.controllers.documentation.SumControllerDocumentation;
 import com.fernando.mathapi.dtos.ResultDTO;
 import com.fernando.mathapi.services.interfaces.SumService;
 
 @RestController
 @RequestMapping("/sum")
-public class SumController {
+public class SumController implements SumControllerDocumentation {
     @Autowired
     private SumService sumService;
 
